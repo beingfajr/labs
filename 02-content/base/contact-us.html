@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <header><h1>HTML Multimedia</h1></header>
+    <img src="images\andrew.jpg" alt="header background" width="100%">
+    <nav>
+        <a href="../base/index.html">Home</a>
+        <a href="contact-us.html">Contact Us</a> 
+    </nav>
+
+    <main>
+        <h3>Contact Us</h3>
+        <Section>
+            <form>
+            <!--INPUTS-->
+            <div>
+            <label name="name">Full Name</label>
+            <input required type="text" placeholder="Jane Doa">
+            </div>
+            <div>
+            <label name="phoneNumber">Phone number</label>
+            <input required type="number" placeholder="+974 #### ####" pattern="\+974 [0-9]{4} [0-9]{4}">
+            </div>
+            <div>
+            <label email="emailAddress">Email Address</label>
+            <input required type="email" placeholder="jane@example.com">
+            </div>
+            
+            <div>
+                <!--RADIO BUTTONS-->
+                <label>Gender</label>
+                <input type="radio" id="female-gender" name="gender">
+                <label for="female-gender">Female</label>
+                <input type="radio" id="male-gender" name="gender" checked>
+                <label for="male-gender">Male</label>
+            </div>
+
+            <div>
+                <label name="DOB">Date of birth</label>
+                <input required type="date">
+            </div>
+
+            <div>
+                <label name="contact">Contact</label>
+                <label>Contact</label>
+
+                <input id="phone-contact" name="phone-contact" type="checkbox" />
+                <label for="phone-contact">Phone</label>
+
+                <input id="emailContact" name="email-contact" type="checkbox" />
+                <label for="emailContact">Email</label>
+
+                <input id="smsContact" name="sms-contact" type="checkbox" />
+                <label for="smsContact">SMS</label>
+            </div>
+
+            <div>
+                <label for="rating">Rating</label>
+                <select id="rating" name="rating" required>
+                  <option value="" disabled>—</option>
+                  <option value="excellent">Excellent</option>
+                  <option value="very-good">Very Good</option>
+                  <option value="good">Good</option>
+                  <option value="poor">Poor</option>
+                </select>
+            </div>
+
+        </form>
+        </Section>
+    </main>
+</body>
+</html>
